@@ -83,7 +83,7 @@ Reboot to let these changes take effect.
 ## Installation
 
 For Budgie: 
-- `99-nvidia.conf`: copy to `/etc/lightdm/lightdm.conf.d/99-nvidia.conf` # This may be the old path! User must confirm.
+- `99-nvidia.conf`: copy to `/etc/lightdm/lightdm.conf.d/99-nvidia.conf`  # Required
 - `99-nvidia.conf`: copy to `/etc/gdm/99-nvidia.conf` # This is confirmed to be the path for new installs. 
 
 For MATE:

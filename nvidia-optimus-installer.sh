@@ -4,7 +4,7 @@
 
 # VARIABLES
 ####################################
-LDM=/etc/lightdm/lightdm.conf.d    # OLD DIRECTORY - USER CONFIRM
+LDM=/etc/lightdm/lightdm.conf.d
 GDM=/etc/gdm
 MOD=/etc/modprobe.d
 BIN=/usr/bin
@@ -90,6 +90,8 @@ then
   echo ""
   sleep 2
   sudo cp ${DIR}/99-nvidia.conf ${GDM}/99-nvidia.conf
+  sudo mkdir -p ${LDM}
+  sudo cp ${DIR}/99-nvidia.conf ${LDM}/99-nvidia.conf
   sudo cp ${DIR}/${OPT} ${BIN}/${OPT}
   sudo chmod a+x ${BIN}/${OPT}
   sudo cp ${DIR}/${SYSD} /etc/systemd/system/${SYSD}
